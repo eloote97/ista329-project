@@ -3,50 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="src/css/styles.css" /> 
+    <link rel="stylesheet" type="text/css" href="src/styles/styles.css" /> 
     <title>Tucson Eats</title>
-
 </head>
-<body>
-    <div class="header">
-        <h1>Tucson Eats</h1>
-        <nav>
-            <a href="#">Restaurants</a> | <a href="#">About Us</a>
-        </nav>
-    </div>
 
+<header>
+    <nav class="header">
+        <div>
+            <a href="index.html">Restaurants</a>
+        </div>
+        <p class="title">Tucson Eats</p>
+        <div>
+            <a href="src/html/about_us.html">About Us</a>
+        </div>
+    </nav>
+</header>
+
+<body>
     <div class="container">
-    <div class="card">
-        <hr>
-        <h2>La Chingada</h2>
-        <hr>
-        <img src="src/imgs/lachingada-main.jpeg" alt="https://lachingadacocina.com/" style="width: 100%;">
-        <p>Description <span class="stars">★★★★★</span></p>
+        <div class="card">
+            <img src="src/imgs/lachingada_main.jpeg" alt="https://lachingadacocina.com/">
+            <div class="info">
+                <div><p class="name"><a>La Chingada</a></p></div>
+                <p><span class="stars">★★★★★</span></p>
+                <p>Tacos, tortilla soup & other Mexican standards in an airy joint with strikingly colorful interiors.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="src/imgs/barrio_main.jpeg" alt="https://barriobrewing.com/">
+            <div class="info">
+                <div class="name"><p>Barrio Brewing Co.</p></div>
+                <p><span class="stars">★★★★★</span></p>
+                <p>Rustic-chic brewpub with well-known happy-hour specials, shuffleboard & up to 12 house beers on tap.</p>
+            </div>
+        </div>    
+
+        <div class="card">
+            <img src="src/imgs/rustico_main.jpeg"  alt="https://www.tacorustico.com/">
+            <div class="info">
+                <div class="name"><p>Tacos Rustico</p></div>
+                <p><span class="stars">★★★★★</span></p>
+                <p>Tacos, burritos & grilled meats offered in a straightforward locale with basic seating.</p>
+            </div>
+        </div>
+        
+        <div class="card">
+            <img src="src/imgs/elnene_main.jpeg" alt="https://www.aquiconelnene.com/menu">
+            <div class="info">
+                <div class="name"><p> Aqui Con el Nene</p></div>
+                <p><span class="stars">★★★★★</span></p>
+                <p>Mexican style food cart offering authentic sonoran hot dogs, tacos, burritos and more.</p>
+            </div>
+        </div>
     </div>
-    
-    <div class="card">
-        <hr>
-        <h2>Barrio Brewing Co.</h2>
-        <hr>
-		<img src="src/imgs/barrio-main.jpeg" alt="https://barriobrewing.com/" style="width: 100%;">
-        <p>Description <span class="stars">★★★★★</span></p>
-    </div>
-    
-    <div class="card">
-        <hr>
-        <h2>El Taco Rustico</h2>
-        <hr>
-        <img src="src/imgs/rustico.jpeg" 
-		alt="https://www.tacorustico.com/" style="width: 100%;">
-        <p>Description <span class="stars">★★★★★</span></p>
-    </div>
-    
-    <div class="card">
-        <hr>
-        <h2>Aqui Con el Nene</h2>
-        <hr>
-        <img src="src/imgs/elnene-main.jpeg" 
-		alt="https://www.aquiconelnene.com/menu" style="width: 100%;">
-        <p>Description <span class="stars">★★★★★</span></p>
-    </div>
-</div>
+</body>
