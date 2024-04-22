@@ -3,58 +3,79 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="src/styles/styles.css" /> 
+    <link rel="stylesheet" type="text/css" href="styles.css" /> 
+    <link rel="stylesheet" type="text/css" href="header/header.css" /> 
+    <script type=module src="header/header.js"></script>
     <title>Tucson Eats</title>
 </head>
 
 <header>
-    <nav class="header">
+    <nav class="head">
         <div>
             <a href="index.html">Restaurants</a>
         </div>
         <p class="title">Tucson Eats</p>
         <div>
-            <a href="src/html/about_us.html">About Us</a>
+            <a href="src/html/about.html">About Us</a>
         </div>
     </nav>
 </header>
 
 <body>
     <div class="container">
-        <div class="card">
+            
+        <button onclick="window.location.href='src/html/lachingada.html'" class="card">
             <img src="src/imgs/lachingada_main.jpeg" alt="https://lachingadacocina.com/">
             <div class="info">
-                <div><p class="name"><a>La Chingada</a></p></div>
+                <div><p class="name">La Chingada</p></div>
                 <p><span class="stars">★★★★★</span></p>
                 <p>Tacos, tortilla soup & other Mexican standards in an airy joint with strikingly colorful interiors.</p>
             </div>
-        </div>
-
-        <div class="card">
-            <img src="src/imgs/barrio_main.jpeg" alt="https://barriobrewing.com/">
+        </button>
+        
+        <button onclick="window.location.href='src/html/barrio.html'" class="card">
+            <img src="src/imgs/barrio_main.jpeg" alt="https://barriobrewing.html">
             <div class="info">
                 <div class="name"><p>Barrio Brewing Co.</p></div>
                 <p><span class="stars">★★★★★</span></p>
                 <p>Rustic-chic brewpub with well-known happy-hour specials, shuffleboard & up to 12 house beers on tap.</p>
-            </div>
-        </div>    
-
-        <div class="card">
+            </div>  
+        </button>  
+        
+        <button onclick="window.location.href='src/html/rustico.html'" class="card">
             <img src="src/imgs/rustico_main.jpeg"  alt="https://www.tacorustico.com/">
             <div class="info">
                 <div class="name"><p>Tacos Rustico</p></div>
                 <p><span class="stars">★★★★★</span></p>
                 <p>Tacos, burritos & grilled meats offered in a straightforward locale with basic seating.</p>
             </div>
-        </div>
+        </button>
         
-        <div class="card">
+        <button onclick="window.location.href='src/html/elnene.html'" class="card">
             <img src="src/imgs/elnene_main.jpeg" alt="https://www.aquiconelnene.com/menu">
             <div class="info">
                 <div class="name"><p> Aqui Con el Nene</p></div>
                 <p><span class="stars">★★★★★</span></p>
                 <p>Mexican style food cart offering authentic sonoran hot dogs, tacos, burritos and more.</p>
             </div>
-        </div>
+        </button>
+        
+        <button onclick="window.location.href='src/html/bisonwitches.html'" class="card">
+            <img src="src/imgs/bisonwitches_main.jpeg" alt="Bison Witches Main">
+            <div class="info">
+                <div class="name"><p>Bison Witches</p></div>
+                <p><span class="stars">★★★★★</span></p>
+                <p>Combination pub & sandwich shop known for hefty portions, bread-bowl soups & happy-hour specials.</p>
+            </div>
+        </button>
+
+        <button onclick="window.location.href='add link here'" class="card">
+            <img src="" alt="">
+            <div class="info">
+                <div class="name"><p>Restaurant Name here</p></div>
+                <p><span class="stars">★★★★★</span></p>
+                <p>Description here</p>
+            </div>
+        </button>
     </div>
 </body>

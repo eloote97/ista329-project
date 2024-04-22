@@ -1,8 +1,0 @@
-This file will track everything we still need to do/impliment.
-add and remove as things are found/fixed
-
-
--add persisten header to all pages.
--add js to update star ratings for index.html
--create webpage layout for individual restaurants
--create about us page.
