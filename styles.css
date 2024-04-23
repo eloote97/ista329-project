@@ -50,8 +50,8 @@ body {
     color: orange;
 }
 
-img {
+.card img {
+    height: 350px; /* Set a fixed height for the images */
     width: 100%;
-    height: 70%;
     object-fit: cover;
 }
