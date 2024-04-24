@@ -1,1 +1,0 @@
-this folder is empty. It will be used for a persistant header in the future to organize every other html file.

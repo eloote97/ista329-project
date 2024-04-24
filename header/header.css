@@ -1,3 +1,8 @@
+/* this file isnt being used anywhere, rather an ease of access incase someone wants to 
+redesign the header navbar. If you do change it, copy and past this into the headerCSS.js file,
+and into the styles.css
+*/
+
 .head {
     background-color: #E7E5DA;
     display: flex;
