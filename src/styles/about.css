@@ -2,3 +2,39 @@ body {
     font-family: Arial, sans-serif;
     background-color: #D2E0FB;
 }
+
+.about-container {
+    display: grid;
+    grid-template:
+        'team info'
+        'team info';
+}
+
+.box {
+    text-align: left;
+    background-color: #E7E5DA;
+    border: 2px solid black;
+    border-radius: 10px;
+    width: calc(50% - 40px);
+    padding: 20px;
+    margin: 2vw;
+
+    box-sizing: border-box;
+    box-shadow: 4px 4px 4px black;
+    transition: box-shadow .3s;
+    overflow: hidden;
+}
+
+#team {
+    height: 80vh;
+    width: 45vw;
+    grid-area: team;
+    margin-left: 23px;
+}
+
+#info {
+    height: 80vh;
+    width: 45vw;
+    grid-area: info;
+    margin-right: 23px;
+}
