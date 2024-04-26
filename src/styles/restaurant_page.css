@@ -6,7 +6,7 @@ body {
 .container {
     display: grid;
     grid-template-rows: repeat(auto, 500px);
-    grid-template-columns: 5fr 2fr;
+    grid-template-columns: 4fr 2fr;
     padding-top: 10px;
     grid-template-areas:
     'main hours'
@@ -19,6 +19,7 @@ body {
     background-color: #E7E5DA;
     border: 2px solid black;
     border-radius: 10px;
+    box-shadow: 4px 4px 4px black;
     margin: 10px;
     padding: 20px;
 }
@@ -35,10 +36,11 @@ h1 {
 .link {
     font: Oswald;
     text-decoration: none;
+    justify-content: space-between;
 }
 
-.a {
-    text-align: left;
+.description {
+    font-size: 18pt;
 }
 
 h2 {
@@ -51,6 +53,7 @@ h2 {
     grid-template-columns: auto auto;
     align-items: center;
     grid-gap: 30px;
+    font-size: 16pt;
 }
 
 .days, .times {
@@ -71,36 +74,26 @@ h2 {
 .container2 {
     display: grid;
     grid-template-rows: repeat(auto, 500px);
-    grid-template-columns: 3fr 3fr 3fr;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     padding-top: 10px;
     grid-template-areas:
-    'img1 review1 img2'
-    'review2 img3 review3'
+    'img review img'
+    'review img review'
 }
 
-.img1 {
-    grid-area: img1;
+.img {
+    grid-area: img;
+    height: 300px;
     width: 100%;
-    height: auto;
     object-fit: cover;
 }
 
-.review1 {
-    grid-area: review1;
-}
-
-.img2 {
-    grid-area: img2;
-}
-
-.review2 {
-    grid-area: review2;
-}
-
-.img3 {
-    grid-area: img3;
-}
-
-.review3 {
-    grid-area: review3;
+.review {
+    grid-area: review;
+    font-size: 16pt;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
 }
