@@ -10,8 +10,7 @@ $(document).ready(function() {
             box-sizing: border-box;
             box-shadow: 4px 4px 4px black;
             border-radius: 10px;
-            margin-left: 23px;
-            margin-right: 23px;
+            margin: 10px;
         }
         
         .title {

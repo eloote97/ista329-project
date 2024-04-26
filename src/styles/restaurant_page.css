@@ -2,3 +2,68 @@ body {
     font-family: Arial, sans-serif;
     background-color: #D2E0FB;
 }
+
+.container {
+    display: grid;
+    grid-template-rows: repeat(auto, 500px);
+    grid-template-columns: 5fr 2fr;
+    padding-top: 10px;
+    grid-template-areas:
+    'main hours'
+    'main hours'
+    'img1 review1'
+    'review2 img2'
+    'img3 review3'
+}
+
+.card {
+    border: border-box;
+    min-height: 100%;
+    text-align: center;
+    background-color: #E7E5DA;
+    border: 2px solid black;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 24pt;
+    font: Oswald;
+}
+
+.main {
+    grid-area: main;
+}
+
+.link {
+    font: Oswald;
+    text-decoration: none;
+}
+
+.a {
+    text-align: left;
+}
+
+.hours {
+    grid-area: hours;
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+    grid-gap: 30px;
+}
+
+.days, .times {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+.days {
+    text-align: right;
+    text-align: center;
+}
+
+.times {
+    text-align: left;
+}
