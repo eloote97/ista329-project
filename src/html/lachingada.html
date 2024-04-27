@@ -67,42 +67,64 @@
         </div>
 
         <div class="card">
+            <div id="googleMap"></div>
+
+            <script>
+
+            function myMap() {
+                var mapProp= {
+                center:new google.maps.LatLng(32.223090,-110.969604),
+                zoom:16,
+                };
+                var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+
+                var marker = new google.maps.Marker({
+                position:{lat:32.2230,lng:-110.9696},
+                map:map
+                });
+            }
+            </script>
+
+            <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCAqfA4GOBrmwVUx2gDtmN2DXNkPLWWDcw&callback=myMap"></script>
+        </div>
+
+        <div class="container2">
+            <div class="card">
+                <img class="img" src="../imgs/lachingada_imgs/1x1chilaquiles-divorciados.jpg" alt="">
+            </div>
+            <div class="card">
+                <div class="review">
+                    <p>"You need to check out La Chingada Cocina... they're dishing up some of the best Mexican Food in Tucson"</p>
+                    <p class="person">- Tucson Foodie</p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="img" src="../imgs/lachingada_imgs/1x1-lorenza-de-ribeye.jpg.webp" alt="">
+            </div>
+            <div class="card">
+                <div class="review">
+                    <p>"The quality, service, and taste of everything over exceeded my expectations. The staff truly cares about your experience."</p>
+                    <p class="person">- Leilani Santillan (Takes on Tucson)</p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="img" src="../imgs/lachingada_imgs/1x1-quesabirria-tacos2.jpg.webp" alt="">
+            </div>
+            <div class="card">
+                <div class="review">
+                    <p>"Everything about this experience was amazing I cannot recommend it enough. The atmosphere felt welcoming, service was beyond expectations and the food was not only delicious but also beautiful."</p>
+                    <p class="person">- Stephen Harlan</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
             <div class="video">
                 <p>Watch this video to learn about how LA Chingada prepares their signature dishes</p>
                 <iframe width="560" height="315" 
                     src="https://www.youtube.com/embed/Aye9PJym-28?si=jhjGHELiHqq3NqLm" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
                     referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
                 </iframe>
-            </div>
-        </div>
-    </div>
-
-    <div class="container2">
-        <div class="card">
-            <img class="img" src="../imgs/lachingada_imgs/1x1chilaquiles-divorciados.jpg" alt="">
-        </div>
-        <div class="card">
-            <div class="review">
-                <p>"You need to check out La Chingada Cocina... they're dishing up some of the best Mexican Food in Tucson"</p>
-                <p class="person">- Tucson Foodie</p>
-            </div>
-        </div>
-        <div class="card">
-            <img class="img" src="../imgs/lachingada_imgs/1x1-lorenza-de-ribeye.jpg.webp" alt="">
-        </div>
-        <div class="card">
-            <div class="review">
-                <p>"The quality, service, and taste of everything over exceeded my expectations. The staff truly cares about your experience."</p>
-                <p class="person">- Leilani Santillan (Takes on Tucson)</p>
-            </div>
-        </div>
-        <div class="card">
-            <img class="img" src="../imgs/lachingada_imgs/1x1-quesabirria-tacos2.jpg.webp" alt="">
-        </div>
-        <div class="card">
-            <div class="review">
-                <p>"Everything about this experience was amazing I cannot recommend it enough. The atmosphere felt welcoming, service was beyond expectations and the food was not only delicious but also beautiful."</p>
-                <p class="person">- Stephen Harlan</p>
             </div>
         </div>
     </div>

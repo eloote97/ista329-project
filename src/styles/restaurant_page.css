@@ -9,6 +9,11 @@ body {
     grid-template-columns: repeat(auto-fit, minmax(650px, 1fr));
 }
 
+.link {
+    display: inline;
+    gap: 15px;
+}
+
 .card {
     background-color: #E7E5DA;
     border: 2px solid black;
@@ -22,7 +27,7 @@ body {
     text-align: center;
     display: grid;
     grid-template-rows: repeat(auto, 500px);
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     padding-top: 10px;
 }
 
@@ -51,15 +56,15 @@ body {
     margin: 10px;
 }
 
+#googleMap {
+    width:100%px;
+    height:500px;
+}
 
 .container2 {
     display: grid;
     grid-template-rows: repeat(auto, 400px);
     grid-template-columns: repeat(auto-fit, minmax(375px, 1fr));
-    padding-top: 10px;
-    grid-template-areas:
-    'img review img'
-    'review img review'
 }
 
 .img {

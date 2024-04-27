@@ -20,13 +20,13 @@ body {
     color: black;
 }
 
-nav div {
+.header-nav {
     text-decoration: none;
     font-size: 18pt;
     padding-top: 60px;
 }
 
-nav div a {
+.header-nav a {
     text-decoration: underline;
     color: black;
 }

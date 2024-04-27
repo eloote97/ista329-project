@@ -66,42 +66,64 @@
         </div>
 
         <div class="card">
+            <div id="googleMap"></div>
+
+            <script>
+
+            function myMap() {
+                var mapProp= {
+                center:new google.maps.LatLng(32.207218,-110.957069),
+                zoom:16,
+                };
+                var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+
+                var marker = new google.maps.Marker({
+                position:{lat:32.207218,lng:-110.957069},
+                map:map
+                });
+            }
+            </script>
+
+            <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCAqfA4GOBrmwVUx2gDtmN2DXNkPLWWDcw&callback=myMap"></script>
+        </div>
+
+        <div class="container2">
+            <div class="card">
+                <img class="img" src="..\imgs\maico_imgs\maico_exterior.jpg" alt="The exterior view of Maico's">
+            </div>
+            <div class="card">
+                <div class="review">
+                    <p>"Maico's Mexican Restaurant serves up some of the best Mexican food in Tucson! The flavors are authentic, the portions are generous, and the service is always friendly. Highly recommend the carne asada tacos!"</p>
+                    <p class="person">- Maria Gonzalez</p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="img" src="..\imgs\maico_imgs\maicos_tacos.jpg" alt="A plate of tacos">
+            </div>
+            <div class="card">
+                <div class="review">
+                    <p>"I've been coming to Maico's Mexican Restaurant for years, and it never disappoints. The salsa is always fresh, the chips are crispy, and the enchiladas are to die for. A must-visit for Mexican food lovers!"</p>
+                    <p class="person">- Javier Rodriguez</p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="img" src="..\imgs\maico_imgs\maico_sign.jpg" alt="The sign that Maicos Mexican Resturtant has up.">
+            </div>
+            <div class="card">
+                <div class="review">
+                    <p>"Maico's Mexican Restaurant has become our go-to spot for family dinners. The food is consistently delicious, and the atmosphere is warm and inviting. We love the variety of dishes on the menu!"</p>
+                    <p class="person">- Emily Johnson</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
             <div class="video">
                 <p>Watch vlogger Diane show the Maico's experience</p>
                 <iframe width="560" height="315" 
                     src="https://www.youtube.com/embed/I5SvSTfPNHg?si=f3fX1QkzI2f4Ac5d&amp;start=295" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
                     referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
                 </iframe>
-            </div>
-        </div>
-    </div>
-
-    <div class="container2">
-        <div class="card">
-            <img class="img" src="..\imgs\maico_imgs\maico_exterior.jpg" alt="The exterior view of Maico's">
-        </div>
-        <div class="card">
-            <div class="review">
-                <p>"Maico's Mexican Restaurant serves up some of the best Mexican food in Tucson! The flavors are authentic, the portions are generous, and the service is always friendly. Highly recommend the carne asada tacos!"</p>
-                <p class="person">- Maria Gonzalez</p>
-            </div>
-        </div>
-        <div class="card">
-            <img class="img" src="..\imgs\maico_imgs\maicos_tacos.jpg" alt="A plate of tacos">
-        </div>
-        <div class="card">
-            <div class="review">
-                <p>"I've been coming to Maico's Mexican Restaurant for years, and it never disappoints. The salsa is always fresh, the chips are crispy, and the enchiladas are to die for. A must-visit for Mexican food lovers!"</p>
-                <p class="person">- Javier Rodriguez</p>
-            </div>
-        </div>
-        <div class="card">
-            <img class="img" src="..\imgs\maico_imgs\maico_sign.jpg" alt="The sign that Maicos Mexican Resturtant has up.">
-        </div>
-        <div class="card">
-            <div class="review">
-                <p>"Maico's Mexican Restaurant has become our go-to spot for family dinners. The food is consistently delicious, and the atmosphere is warm and inviting. We love the variety of dishes on the menu!"</p>
-                <p class="person">- Emily Johnson</p>
             </div>
         </div>
     </div>

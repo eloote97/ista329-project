@@ -5,24 +5,23 @@ body {
 
 .about-container {
     display: grid;
+    grid-template-rows: repeat(auto, 550px);
+    grid-template-columns: repeat(auto-fit, minmax(550px, 1fr));
     grid-template:
         'team info'
-        'team info';
 }
 
-.box {
-    text-align: center;
+.card {
+    text-align: left;
     background-color: #E7E5DA;
     border: 2px solid black;
     border-radius: 10px;
-    width: calc(50% - 40px);
+    margin: 10px;
     padding: 20px;
-    margin: 2vw;
 
     box-sizing: border-box;
     box-shadow: 4px 4px 4px black;
     transition: box-shadow .3s;
-    overflow: hidden;
 }
 
 #team {
