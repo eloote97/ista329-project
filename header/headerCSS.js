@@ -29,6 +29,10 @@ $(document).ready(function() {
             color: black;
         }
         
+        a:hover {
+            color: blue;
+        }
+
         body {
             background-color: #D2E0FB;
         }

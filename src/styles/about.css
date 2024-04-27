@@ -24,16 +24,11 @@ body {
     transition: box-shadow .3s;
 }
 
-#team {
-    height: 80vh;
-    width: 45vw;
-    grid-area: team;
-    margin-left: 23px;
+.team {
+    text-align: center;
+    font-size: 16pt;
 }
 
-#info {
-    height: 80vh;
-    width: 45vw;
-    grid-area: info;
-    margin-right: 23px;
+.info {
+    font-size: 16pt;
 }
