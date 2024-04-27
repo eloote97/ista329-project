@@ -6,16 +6,10 @@ body {
 .container {
     display: grid;
     grid-template-rows: repeat(auto, 500px);
-    grid-template-columns: 4fr 2fr;
-    padding-top: 10px;
-    grid-template-areas:
-    'main hours'
-    'main hours'
+    grid-template-columns: repeat(auto-fit, minmax(650px, 1fr));
 }
 
 .card {
-    border: border-box;
-    text-align: center;
     background-color: #E7E5DA;
     border: 2px solid black;
     border-radius: 10px;
@@ -24,52 +18,39 @@ body {
     padding: 20px;
 }
 
-h1 {
-    font-size: 24pt;
-    font: Oswald;
-}
-
 .main {
-    grid-area: main;
-}
-
-.link {
-    font: Oswald;
-    text-decoration: none;
-    justify-content: space-between;
-}
-
-.description {
-    font-size: 18pt;
-}
-
-h2 {
-    font-size: 24pt;
+    text-align: center;
+    display: grid;
+    grid-template-rows: repeat(auto, 500px);
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    padding-top: 10px;
 }
 
 .hours {
-    grid-area: hours;
-    display: grid;
-    grid-template-columns: auto auto;
-    align-items: center;
-    grid-gap: 30px;
-    font-size: 16pt;
-}
-
-.days, .times {
-    list-style: none;
-    padding-left: 0;
-    margin: 0;
-}
-
-.days {
-    text-align: right;
     text-align: center;
 }
 
-.times {
-    text-align: left;
+.hours h2 {
+    margin-bottom: 10px;
 }
+
+.hours table {
+    margin: 0 auto;
+}
+
+.hours table th,
+.hours table td {
+    text-align: center;
+}
+
+.video {
+    font-size: 18pt;
+    font-style: bold;
+    justify-content: center;
+    text-align: center;
+    margin: 10px;
+}
+
 
 .container2 {
     display: grid;
