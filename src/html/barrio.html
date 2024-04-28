@@ -16,7 +16,6 @@
 
     <div class="container">
         <div class="card">
-
             <div class="main">
                 <div class="description">
                     <h1>BARRIO BREWING CO.</h1>
@@ -70,21 +69,18 @@
 
         <div class="card">
             <div id="googleMap"></div>
-
             <script>
-
-            function myMap() {
-                var mapProp= {
-                center:new google.maps.LatLng(32.214501, -110.959504),
-                zoom:16,
-                };
-                var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
-
-                var marker = new google.maps.Marker({
-                position:{lat:32.214501,lng:-110.959504},
-                map:map
-                });
-            }
+                function myMap() {
+                    var mapProp= {
+                        center:new google.maps.LatLng(32.214501, -110.959504),
+                        zoom:16,
+                    };
+                    var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+                    var marker = new google.maps.Marker({
+                        position:{lat:32.214501,lng:-110.959504},
+                        map:map
+                    });
+                }
             </script>
 
             <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCAqfA4GOBrmwVUx2gDtmN2DXNkPLWWDcw&callback=myMap"></script>
@@ -92,26 +88,35 @@
         
         <div class="container2">
             <div class="card">
-                <img class="img" src="..\imgs\barrio_imgs\barrio_outside.jpg" alt="An image of what barrio brewing company looks like on the outside">
+                <img class="img" src="..\imgs\barrio_imgs\barrio_outside.jpg" alt="Exterior of Barrio Brewing Co.">
             </div>
+       
             <div class="card">
                 <div class="review">
                     <p>"Barrio Brewing Co. is a gem in Tucson. Their craft beers are top-notch, and the atmosphere is always lively. A must-visit for any beer enthusiast!"</p>
                     <p class="person">- John Smith</p>
                 </div>
             </div>
+
             <div class="card">
-                <img class="img" src="..\imgs\barrio_imgs\barrio_bar.jpg" alt="An image of what the bar looks like at barrio brewing company">
+                <div class="card">
+                    <img class="img" src="..\imgs\barrio_imgs\barrio_bar.jpg" alt="Interior bar at Barrio Brewing Co.">
+                </div>
             </div>
+
             <div class="card">
                 <div class="review">
                     <p>"I love Barrio Brewing Co.! Their pizzas are delicious, and they pair perfectly with their selection of beers. Great place to hang out with friends!"</p>
                     <p class="person">- Emily Johnson</p>
                 </div>
             </div>
+
             <div class="card">
-                <img class="img" src="..\imgs\barrio_imgs\barrio_dining.jpg" alt="An image of what the dining room looks like at barrio brewing company">
+                <div class="card">
+                    <img class="img" src="..\imgs\barrio_imgs\barrio_dining.jpg" alt="Interior dining area at Barrio Brewing Co.">
+                </div>
             </div>
+
             <div class="card">
                 <div class="review">
                     <p>"The ambiance at Barrio Brewing Co. is fantastic. Whether you're indoors or out on the patio, it's always a great experience. Plus, their staff is friendly and knowledgeable about their beers!"</p>
@@ -129,8 +134,6 @@
                 </iframe>
             </div>
         </div>
-
     </div>
 </body>
 </html>
-    

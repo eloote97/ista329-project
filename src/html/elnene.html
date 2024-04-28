@@ -16,7 +16,6 @@
 
     <div class="container">
         <div class="card">
-
             <div class="main">
                 <div class="description">
                     <h1>AQUI CON EL NENE</h1>
@@ -70,21 +69,18 @@
 
         <div class="card">
             <div id="googleMap"></div>
-
             <script>
-
-            function myMap() {
-                var mapProp= {
-                center:new google.maps.LatLng( 32.287335, -110.995373),
-                zoom:16,
-                };
-                var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
-
-                var marker = new google.maps.Marker({
-                position:{lat:32.287335,lng:-110.995373},
-                map:map
-                });
-            }
+                function myMap() {
+                    var mapProp= {
+                        center:new google.maps.LatLng( 32.287335, -110.995373),
+                        zoom:16,
+                    };
+                    var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+                    var marker = new google.maps.Marker({
+                        position:{lat:32.287335,lng:-110.995373},
+                        map:map
+                    });
+                }
             </script>
 
             <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCAqfA4GOBrmwVUx2gDtmN2DXNkPLWWDcw&callback=myMap"></script>
@@ -92,26 +88,36 @@
 
         <div class="container2">
             <div class="card">
-                <img class="img" src="../imgs/elnene_imgs/nene_menu.jpg" alt="An image of the Aqui Con El Nene menu">
+                <img class="img" src="../imgs/elnene_imgs/nene_menu.jpg" alt="Aqui Con El Nene menu">
             </div>
+       
+
             <div class="card">
                 <div class="review">
                     <p>"Aqui con El Nene never disappoints! The tacos are always fresh and flavorful, and the service is top-notch. I highly recommend the carne asada tacos!"</p>
                     <p class="person">- Maria Lopez</p>
                 </div>
             </div>
+
             <div class="card">
-                <img class="img" src="../imgs/elnene_imgs/nene_outside.jpg" alt="The exterior of Aqui Con El Nene Restaurant">
+                <div class="card">
+                    <img class="img" src="../imgs/elnene_imgs/nene_outside.jpg" alt="Exterior of Aqui Con El Nene Restaurant">
+                </div>
             </div>
+
             <div class="card">
                 <div class="review">
                     <p>"I'm a huge fan of Aqui con El Nene! The food is consistently delicious, and the prices are very reasonable. Their salsa verde is the perfect accompaniment to any taco!"</p>
                     <p class="person">- Javier Martinez</p>
                 </div>
             </div>
+
             <div class="card">
-                <img class="img" src="../imgs/elnene_imgs/nene_sanoranDog.jpg" alt="A Sanoran Hotdog from Aqui Con El Nene Restaurant">
+                <div class="card">
+                    <img class="img" src="../imgs/elnene_imgs/nene_sanoranDog.jpg" alt="Sonoran Hotdog from Aqui Con El Nene Restaurant">
+                </div>
             </div>
+
             <div class="card">
                 <div class="review">
                     <p>"I stumbled upon Aqui con El Nene while exploring Tucson, and I'm so glad I did! The tacos are amazing, and the staff is incredibly friendly. Don't miss out on this gem!"</p>

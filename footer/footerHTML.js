@@ -1,4 +1,3 @@
-/* Footer HTML */
 $(document).ready(function() {
     var footerHTML = `
     <footer>

@@ -16,7 +16,6 @@
 
     <div class="container">
         <div class="card">
-
             <div class="main">
                 <div class="description">
                     <h1>BISON WITCHES</h1>
@@ -70,48 +69,55 @@
         
         <div class="card">
             <div id="googleMap"></div>
-
             <script>
-
-            function myMap() {
-                var mapProp= {
-                center:new google.maps.LatLng(32.225851, -110.965430),
-                zoom:16,
-                };
-                var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
-
-                var marker = new google.maps.Marker({
-                position:{lat:32.225851,lng:-110.965430},
-                map:map
-                });
-            }
+                function myMap() {
+                    var mapProp= {
+                        center:new google.maps.LatLng(32.225851, -110.965430),
+                        zoom:16,
+                    };
+                    var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+                    var marker = new google.maps.Marker({
+                        position:{lat:32.225851,lng:-110.965430},
+                        map:map
+                    });
+                }
             </script>
 
             <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCAqfA4GOBrmwVUx2gDtmN2DXNkPLWWDcw&callback=myMap"></script>
         </div>
-
+        
         <div class="container2">
             <div class="card">
-                <img class="img" src="../imgs/bisonwitches_imgs/bbq_pork_nachos.jpeg" alt="">
+                <img class="img" src="../imgs/bisonwitches_imgs/bbq_pork_nachos.jpeg" alt="BBQ Pork Nachos at Bison Witches">
             </div>
+       
+
             <div class="card">
                 <div class="review">
                     <p>"Such an Awesome place great atmosphere and dog friendly. You definitely wont leave hungry portions are huge and such a variety of things to try."</p>
                     <p class="person">- Marc Paul</p>
                 </div>
             </div>
+
             <div class="card">
-                <img class="img" src="../imgs/bisonwitches_imgs/mcquinton.jpeg" alt="">
+                <div class="card">
+                    <img class="img" src="../imgs/bisonwitches_imgs/mcquinton.jpeg" alt="Interior of Bison Witches">
+                </div>
             </div>
+
             <div class="card">
                 <div class="review">
                     <p>"There are no real bison, witches, or broomsticks in this deli; however, we agreed that there is still magic within this restaurant. Now… maybe not literally… but it is safe to say that we have not had deli food this good in a while. Of course, if you don’t believe us, you’re welcome to experience the magic yourselves…"</p>
                     <p class="person">- Takes on Tucson</p>
                 </div>
             </div>
+
             <div class="card">
-                <img class="img" src="../imgs/bisonwitches_imgs/french_dip.jpeg" alt="">
+                <div class="card">
+                    <img class="img" src="../imgs/bisonwitches_imgs/french_dip.jpeg" alt="French Dip sandwich at Bison Witches">
+                </div>
             </div>
+
             <div class="card">
                 <div class="review">
                     <p>"This place has awesome food!   The sandwiches are delicious.  The fried peanut butter and jelly sandwich is delicious as well as the veggie sandwich. Has a small bar. You will not be disappointed when you visit!"</p>

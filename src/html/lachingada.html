@@ -5,10 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="../styles/restaurant_page.css" /> 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <title>La Chingada</title>
+    <title>Maico's Mexican Restaurant</title>
+    <style>
+        #skip-link {
+            position: absolute;
+            top: -40px;
+            left: 0;
+            background-color: #000;
+            color: #fff;
+            padding: 10px;
+            z-index: 1000;
+        }
+    </style>
 </head>
 
 <body>
+    <!-- Skip Navigation Link -->
+    <a href="#main-content" id="skip-link">Skip to main content</a>
+
     <script src="../../header/headerCSS.js"></script>
     <script src="../../header/headerHTML.js"></script>
     <script src="../../footer/footerHTML.js"></script>
@@ -16,16 +30,15 @@
 
     <div class="container">
         <div class="card">
-
-            <div class="main">
+            <div class="main" id="main-content">
                 <div class="description">
-                    <h1>LA CHINGADA COCINA</h1>
+                    <h1>MAICO'S MEXICAN RESTAURANT</h1>
                     <div class="link">
-                        <a href="https://lachingadacocina.com">WEBSITE</a>
-                        <a href="tel:5208678441">520-867-8441</a>
-                        <a href="https://www.google.com/maps/place/La+Chingada+Cocina+Mexicana/@32.2228644,-110.9699213,16z/data=!4m15!1m8!3m7!1s0x86d671803511d3df:0x133b8b69ef161f25!2sLa+Chingada+Cocina+Mexicana!8m2!3d32.2230925!4d-110.9696029!10e5!16s%2Fg%2F11qpr81wl8!3m5!1s0x86d671803511d3df:0x133b8b69ef161f25!8m2!3d32.2230925!4d-110.9696029!16s%2Fg%2F11qpr81wl8?entry=ttu">110 E PENNINGTON ST.</a>
+                        <a href="https://sites.google.com/view/maicorestaurantaz">WEBSITE</a>
+                        <a href="tel:5202942836">(520)-294-2836</a>
+                        <a href="https://www.google.com/maps/dir//maico+tucson/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x86d670f384209787:0xf11b7e988ac3d118?sa=X&ved=1t:3061&ictx=111">835 E 22nd St</a>
                     </div>
-                    <p class="description">La Chingada strives to offer the best Mexican food in Tucson with inviting hospitality and vibrant atmosphere for an unforgettable and authentic taste of Mexico. Using locally sourced ingredients to capture the true authentic flavors of Tucson, serving some amazing margaritas, and a prime downtown location, this place is definitely worth a visit!</p>
+                    <p class="description">Maico's Mexican Restaurant brings the vibrant flavors of Mexico to Tucson with its authentic dishes and warm hospitality. From savory tacos to hearty enchiladas, each dish is prepared with care and traditional Mexican spices. Whether you're dining in for a family meal or grabbing takeout for a quick bite, Maico's Mexican Restaurant offers a taste of home-cooked Mexican cuisine.</p>
                 </div>
 
                 <div class="hours">
@@ -37,7 +50,7 @@
                         </tr>
                         <tr>
                             <td>Sun:</td>
-                            <td>9:00 AM - 3:00 PM, 5:00 PM - 10:00 PM</td>
+                            <td>6:00 AM - 8:00 PM</td>
                         </tr>
                         <tr>
                             <td>Mon:</td>
@@ -70,21 +83,18 @@
 
         <div class="card">
             <div id="googleMap"></div>
-
             <script>
-
-            function myMap() {
-                var mapProp= {
-                center:new google.maps.LatLng(32.223090,-110.969604),
-                zoom:16,
-                };
-                var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
-
-                var marker = new google.maps.Marker({
-                position:{lat:32.2230,lng:-110.9696},
-                map:map
-                });
-            }
+                function myMap() {
+                    var mapProp= {
+                        center:new google.maps.LatLng(32.207218,-110.957069),
+                        zoom:16,
+                    };
+                    var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+                    var marker = new google.maps.Marker({
+                        position:{lat:32.207218,lng:-110.957069},
+                        map:map
+                    });
+                }
             </script>
 
             <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCAqfA4GOBrmwVUx2gDtmN2DXNkPLWWDcw&callback=myMap"></script>
@@ -92,7 +102,7 @@
 
         <div class="container2">
             <div class="card">
-                <img class="img" src="../imgs/lachingada_imgs/1x1chilaquiles-divorciados.jpg" alt="">
+                <img class="img" src="../imgs/lachingada_imgs/1x1chilaquiles-divorciados.jpg" alt="Chilaquiles Divorciados">
             </div>
             <div class="card">
                 <div class="review">
@@ -101,7 +111,7 @@
                 </div>
             </div>
             <div class="card">
-                <img class="img" src="../imgs/lachingada_imgs/1x1-lorenza-de-ribeye.jpg.webp" alt="">
+                <img class="img" src="../imgs/lachingada_imgs/1x1-lorenza-de-ribeye.jpg.webp" alt="Lorenza de Ribeye">
             </div>
             <div class="card">
                 <div class="review">
@@ -110,7 +120,7 @@
                 </div>
             </div>
             <div class="card">
-                <img class="img" src="../imgs/lachingada_imgs/1x1-quesabirria-tacos2.jpg.webp" alt="">
+                <img class="img" src="../imgs/lachingada_imgs/1x1-quesabirria-tacos2.jpg.webp" alt="Quesabirria Tacos">
             </div>
             <div class="card">
                 <div class="review">
